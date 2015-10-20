@@ -1,5 +1,5 @@
 {
-    "name": "nejtr0n/bx-component-installer",
+    "name": "nejtr0n/bx-component-installer-plugin",
     "type": "composer-plugin",
     "license": "MIT",
     "description" : "Plugin to install any component to /local/modules/{$name}",
