@@ -1,16 +1,13 @@
 <?php
 
-namespace Osotov\BitrixPluginForComposer;
+namespace Bx\Composer;
 
 use Composer\Composer;
 use Composer\IO\IOInterface;
 use Composer\Plugin\PluginInterface;
 
-/**
- * Class ModuleInstallerPlugin
- * @package Osotov\BitrixPluginForComposer
- */
-class ModuleInstallerPlugin implements PluginInterface
+
+class ComponentInstallerPlugin implements PluginInterface
 {
     /**
      * @param Composer $composer
@@ -18,7 +15,7 @@ class ModuleInstallerPlugin implements PluginInterface
      */
     public function activate(Composer $composer, IOInterface $io)
     {
-        $installer = new ModuleInstaller($io, $composer);
+        $installer = new ComponentInstaller ($io, $composer);
         $composer->getInstallationManager()->addInstaller($installer);
     }
 }
