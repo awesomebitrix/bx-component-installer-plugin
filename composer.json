@@ -13,6 +13,6 @@
         "psr-4": {"Bx\\Composer\\": "src/"}
     },
     "require": {
-        "composer-plugin-api": "dev-master"
+        "composer-plugin-api": "*"
     }
 }
