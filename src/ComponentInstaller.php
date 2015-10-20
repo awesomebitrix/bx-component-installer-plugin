@@ -19,8 +19,13 @@ class ComponentInstaller extends LibraryInstaller {
                 '"extra": { "bx_component_name": "name" } '
             );
         }
-
-        return 'local/components/' . $name;
+        // Create ns dir for component
+        $str_name = "";
+        $arr_path = explode (":", $name);
+        foreach ($arr_path as $path) {
+            $str_name .= '/'.$path;
+        }
+        return 'local/components/' . $str_name;
     }
 
     public function supports($packageType)
