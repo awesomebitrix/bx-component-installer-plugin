@@ -12,6 +12,9 @@
     "autoload": {
         "psr-4": {"Bx\\Composer\\": "src/"}
     },
+    "extra": {
+      "class": "Bx\\Composer\\ComponentInstallerPlugin"
+   },
     "require": {
         "composer-plugin-api": "*"
     }
