@@ -16,6 +16,6 @@
       "class": "Bx\\Composer\\ComponentInstallerPlugin"
    },
     "require": {
-        "composer-plugin-api": "*"
+        "composer-plugin-api": "dev-master"
     }
 }
